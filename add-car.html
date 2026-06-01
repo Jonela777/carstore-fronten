@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Car</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Add New Car</h1>
+
+    <form id="car-form">
+      <div class="form-group">
+        <label>Make</label>
+        <input type="text" id="make" required>
+      </div>
+      <div class="form-group">
+        <label>Model</label>
+        <input type="text" id="model" required>
+      </div>
+      <div class="form-group">
+        <label>Year</label>
+        <input type="number" id="year" required>
+      </div>
+      <div class="form-group">
+        <label>Price</label>
+        <input type="number" id="price" required>
+      </div>
+      <div class="form-group">
+        <label>Color</label>
+        <select id="color">
+          <option>Black</option>
+          <option>White</option>
+          <option>Silver</option>
+          <option>Gray</option>
+          <option>Red</option>
+          <option>Blue</option>
+        </select>
+      </div>
+      <button class="btn btn-add">
+        Save Car
+      </button>
+    </form>
+  </div>
+
+  <script src="scripts/store-http.js"></script>
+  <script src="scripts/add-car.js"></script>
+</body>
+</html>

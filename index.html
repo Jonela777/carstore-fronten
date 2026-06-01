@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Store</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <h1>Car Store</h1>
+      <a href="add-car.html" class="btn btn-add">
+        Add Car
+      </a>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h3>Total Cars</h3>
+        <p id="stat-total">0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Average Price</h3>
+        <p id="stat-avg">$0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Newest Year</h3>
+        <p id="stat-newest">0</p>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Car</th>
+          <th>Year</th>
+          <th>Color</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="cars-body">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="scripts/store-http.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
